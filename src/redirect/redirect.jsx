@@ -6,7 +6,7 @@ function Navi() {
     const [ad, setAd] = useState()
 
     useEffect(() => {
-        fetch('https://ads.behad.uz/api/v1/advertisements?campaign_id=' + campaign_id, {
+        fetch('https://ads.adstar.uz/api/v1/advertisements?campaign_id=' + campaign_id, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -18,7 +18,7 @@ function Navi() {
                 }
             }).catch((e) => console.log(e))
 
-        fetch("https://ads.behad.uz/api/v1/addAction", {
+        fetch("https://ads.adstar.uz/api/v1/addAction", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
